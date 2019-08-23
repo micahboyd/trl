@@ -1,10 +1,14 @@
-require 'trl'
+require 'thor'
+require_relative 'command/commands'
 
 module TRL
-  class CLI
+  class CLI < Thor
 
-    def self.start
-      Command.start(ARGV)
+    desc 'list', 'lists boards'
+    method_option :boards, aliases: '-b'
+
+    def list(args = nil)
+      puts TRL::Command::List.new(args).execute
     end
 
   end

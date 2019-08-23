@@ -37,10 +37,14 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_development_dependency 'aruba'
+  spec.add_development_dependency 'awesome_print', '~> 1.8'
   spec.add_development_dependency 'bundler', '~> 2.0'
   spec.add_development_dependency 'cucumber'
+  spec.add_development_dependency 'dotenv', '~> 2.5'
+  spec.add_development_dependency 'pry', '~> 0.12'
+  spec.add_development_dependency 'pry-doc', '1.0'
   spec.add_development_dependency 'rake', '~> 10.0'
   spec.add_development_dependency 'rspec', '~> 3.0'
-  spec.add_development_dependency 'ruby-trello', '2.1.0'
+  spec.add_development_dependency 'ruby-trello', '~> 2.1'
   spec.add_development_dependency 'thor'
 end
