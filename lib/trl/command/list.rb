@@ -8,9 +8,9 @@ module TRL; module Command
     end
 
     def execute
-      if board_name && list_name && card_name
+      if card_name
         trello_card.attributes[:desc]
-      elsif board_name && list_name
+      elsif list_name
         trello_list.cards.map(&name)
       elsif board_name
         trello_board.lists.map(&name)

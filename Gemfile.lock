@@ -51,6 +51,8 @@ GEM
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
     dotenv (2.7.5)
+    factory_bot (5.0.2)
+      activesupport (>= 4.2.0)
     ffi (1.11.1)
     gherkin (5.1.0)
     http-accept (1.7.0)
@@ -119,6 +121,7 @@ DEPENDENCIES
   bundler (~> 2.0)
   cucumber
   dotenv (~> 2.5)
+  factory_bot (~> 5.0.2)
   pry (~> 0.12)
   pry-doc (= 1.0)
   rake (~> 10.0)
