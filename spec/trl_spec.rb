@@ -5,7 +5,7 @@ RSpec.describe TRL do
   end
 
   it 'works' do
-    expect(TRL::CLI.start).to be_instance_of(TRL::Command)
+    expect(TRL::CLI).to respond_to(:start)
   end
 
 end
