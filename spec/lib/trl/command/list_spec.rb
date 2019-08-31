@@ -1,8 +1,9 @@
 RSpec.describe TRL::Command::List do
 
-  subject(:list) { described_class.new(args).execute }
+  subject(:list) { described_class.new(args, options).execute }
 
   let(:args) { nil }
+  let(:options) { {} }
 
   describe 'list with no args', :vcr do
     it { expect(list).to eq(['[0] Secret', '[1] Work']) }
@@ -64,6 +65,23 @@ RSpec.describe TRL::Command::List do
       let(:args) { 'work/0/test card 9' }
 
       it { expect(list).to eq('Test Card 9 description. Card instructions usually here.') }
+    end
+
+  end
+
+  describe 'fetching card attributes' do
+    let(:args) { 'work/new/Test Card 9' }
+
+    context 'with description option', :vcr do
+      let(:options) { { description: 'something' } }
+
+      it { expect(list).to eq('Test Card 9 description. Card instructions usually here.') }
+    end
+
+    context 'with labels option', :vcr do
+      let(:options) { { labels: 'something' } }
+
+      it { expect(list).to eq(['[0] Easy']) }
     end
 
   end

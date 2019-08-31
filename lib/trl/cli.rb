@@ -5,10 +5,11 @@ module TRL
   class CLI < Thor
 
     desc 'list', 'lists boards'
-    method_option :boards, aliases: '-b'
+    method_option :name, aliases: '-n'
+    method_option :description, aliases: '-d'
 
     def list(args = nil)
-      puts TRL::Command::List.new(args).execute
+      puts TRL::Command::List.new(args, options).execute
     end
 
   end
