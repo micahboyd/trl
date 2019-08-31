@@ -5,7 +5,7 @@ RSpec.describe TRL::Command::List do
   let(:args) { nil }
 
   describe 'list with no args', :vcr do
-    it { expect(list).to eq(%w[Secret Work]) }
+    it { expect(list).to eq(['[0] Secret', '[1] Work']) }
   end
 
   describe 'with named args' do
@@ -13,13 +13,13 @@ RSpec.describe TRL::Command::List do
     context 'when board name', :vcr do
       let(:args) { 'work' }
 
-      it { expect(list).to eq(%w[New Doing Done]) }
+      it { expect(list).to eq(["[0] New", "[1] Doing", "[2] Done"]) }
     end
 
     context 'when board and list name', :vcr do
       let(:args) { 'work/new' }
 
-      it { expect(list).to eq(['Test Card 9', 'Test Card 8', 'Test Card 7']) }
+      it { expect(list).to eq(['[0] Test Card 9', '[1] Test Card 8', '[2] Test Card 7']) }
     end
 
     context 'when board, list and card name', :vcr do
@@ -35,13 +35,13 @@ RSpec.describe TRL::Command::List do
     context 'when board index', :vcr do
       let(:args) { '1' }
 
-      it { expect(list).to eq(%w[New Doing Done]) }
+      it { expect(list).to eq(["[0] New", "[1] Doing", "[2] Done"]) }
     end
 
     context 'when board and list index', :vcr do
       let(:args) { '1/0' }
 
-      it { expect(list).to eq(['Test Card 9', 'Test Card 8', 'Test Card 7']) }
+      it { expect(list).to eq(['[0] Test Card 9', '[1] Test Card 8', '[2] Test Card 7']) }
     end
 
     context 'when board, list and card index', :vcr do
@@ -57,7 +57,7 @@ RSpec.describe TRL::Command::List do
     context 'when board index and list name', :vcr do
       let(:args) { '1/new' }
 
-      it { expect(list).to eq(['Test Card 9', 'Test Card 8', 'Test Card 7']) }
+      it { expect(list).to eq(['[0] Test Card 9', '[1] Test Card 8', '[2] Test Card 7']) }
     end
 
     context 'when board name, list index, and card name', :vcr do

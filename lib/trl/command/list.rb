@@ -11,11 +11,11 @@ module TRL; module Command
       if card
         trello_card.attributes[:desc]
       elsif list
-        trello_list.cards.map(&name)
+        trello_list.cards.map.with_index(&name)
       elsif board
-        trello_board.lists.map(&name)
+        trello_board.lists.map.with_index(&name)
       else
-        trello_boards.map(&name)
+        trello_boards.map.with_index(&name)
       end
     end
 
@@ -44,7 +44,7 @@ module TRL; module Command
     end
 
     def name
-      -> (trello_resource) { trello_resource.attributes[:name] }
+      -> (trello_resource, index) { "[#{index}] #{trello_resource.attributes[:name]}" }
     end
 
     def attribute(name)
