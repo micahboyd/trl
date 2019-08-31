@@ -60,21 +60,21 @@ http_interactions:
       X-Rate-Limit-Api-Key-Max:
       - '300'
       X-Rate-Limit-Api-Key-Remaining:
-      - '299'
+      - '297'
       X-Rate-Limit-Api-Token-Interval-Ms:
       - '10000'
       X-Rate-Limit-Api-Token-Max:
       - '100'
       X-Rate-Limit-Api-Token-Remaining:
-      - '99'
+      - '97'
       X-Rate-Limit-Member-Interval-Ms:
       - '10000'
       X-Rate-Limit-Member-Max:
       - '200'
       X-Rate-Limit-Member-Remaining:
-      - '199'
+      - '197'
       X-Server-Time:
-      - '1567202985036'
+      - '1567202986561'
       Content-Type:
       - application/json; charset=utf-8
       Etag:
@@ -82,19 +82,19 @@ http_interactions:
       Vary:
       - Accept-Encoding
       Date:
-      - Fri, 30 Aug 2019 22:09:45 GMT
+      - Fri, 30 Aug 2019 22:09:46 GMT
       Content-Length:
       - '1472'
       Connection:
       - keep-alive
       Set-Cookie:
-      - dsc=f43b327c9948fe59da3f38af3e233b8dc4a2b0c1c1ef5042267c95a9f511c17e; Path=/;
-        Expires=Mon, 02 Sep 2019 22:09:45 GMT; Secure
+      - dsc=328077c4a143e68206b6d3cfc1e6e3660373c5ae1b930139168f87130552d9d4; Path=/;
+        Expires=Mon, 02 Sep 2019 22:09:46 GMT; Secure
     body:
       encoding: UTF-8
       string: '{"id":"5d68aa1338b6f82d9ee149e0","activityBlocked":false,"avatarHash":null,"avatarUrl":null,"bio":"","bioData":null,"confirmed":true,"fullName":"trl_app","idEnterprise":null,"idEnterprisesDeactivated":[],"idMemberReferrer":null,"idPremOrgsAdmin":[],"initials":"T","memberType":"normal","nonPublic":{},"nonPublicAvailable":false,"products":[],"url":"https://trello.com/trl_app","username":"trl_app","status":"disconnected","aaEmail":null,"aaId":null,"avatarSource":"none","email":"micah.hope.boyd@gmail.com","gravatarHash":"c2c1278ab6d0781d65c60c9df46d0d72","idBoards":["5d68aacc0b11040e22b842df","5d68b34a4026c5227690b656"],"idOrganizations":[],"idEnterprisesAdmin":[],"limits":{"boards":{"totalPerMember":{"status":"ok","disableAt":4500,"warnAt":4050}},"orgs":{"totalPerMember":{"status":"ok","disableAt":850,"warnAt":765}}},"loginTypes":["password"],"marketingOptIn":{"optedIn":true,"date":"2019-08-30T04:47:45.204Z"},"messagesDismissed":[{"_id":"5d68abf7e1d12a2e76e896da","name":"ad-subscribeOnComment","count":1,"lastDismissed":"2019-08-30T04:54:15.301Z"}],"oneTimeMessagesDismissed":["close-menu-of-first-board","board-background-prompt"],"prefs":{"privacy":{"fullName":"public","avatar":"public"},"sendSummaries":true,"minutesBetweenSummaries":60,"minutesBeforeDeadlineToNotify":1440,"colorBlind":false,"locale":"en-US"},"trophies":[],"uploadedAvatarHash":null,"uploadedAvatarUrl":null,"premiumFeatures":[],"isAaMastered":false,"ixUpdate":"19","idBoardsPinned":null}'
     http_version: 
-  recorded_at: Fri, 30 Aug 2019 22:09:45 GMT
+  recorded_at: Fri, 30 Aug 2019 22:09:47 GMT
 - request:
     method: get
     uri: https://api.trello.com/1/members/trl_app/boards?key=b7e8f311390f35db3837001520104e45&token=86249946b2ac0c5477873274dcaec19155a5db5faa5bb559c1451b7b307e51fd
@@ -155,21 +155,21 @@ http_interactions:
       X-Rate-Limit-Api-Key-Max:
       - '300'
       X-Rate-Limit-Api-Key-Remaining:
-      - '298'
+      - '296'
       X-Rate-Limit-Api-Token-Interval-Ms:
       - '10000'
       X-Rate-Limit-Api-Token-Max:
       - '100'
       X-Rate-Limit-Api-Token-Remaining:
-      - '98'
+      - '96'
       X-Rate-Limit-Member-Interval-Ms:
       - '10000'
       X-Rate-Limit-Member-Max:
       - '200'
       X-Rate-Limit-Member-Remaining:
-      - '198'
+      - '196'
       X-Server-Time:
-      - '1567202985680'
+      - '1567202988631'
       Content-Type:
       - application/json; charset=utf-8
       Etag:
@@ -177,17 +177,112 @@ http_interactions:
       Vary:
       - Accept-Encoding
       Date:
-      - Fri, 30 Aug 2019 22:09:45 GMT
+      - Fri, 30 Aug 2019 22:09:48 GMT
       Content-Length:
       - '2547'
       Connection:
       - keep-alive
       Set-Cookie:
-      - dsc=1f5c62c06c5c38d65e0bf27acc0d1f28412c8e83f8b923987cd9a50b5039e2ce; Path=/;
-        Expires=Mon, 02 Sep 2019 22:09:45 GMT; Secure
+      - dsc=ca8846789b150694e6a3e1dde938bf9e03956180df2bd54e21265a9b580f930b; Path=/;
+        Expires=Mon, 02 Sep 2019 22:09:48 GMT; Secure
     body:
       encoding: UTF-8
       string: '[{"name":"Secret","desc":"","descData":null,"closed":false,"idOrganization":null,"limits":null,"pinned":null,"shortLink":"Gva6ny0W","powerUps":[],"dateLastActivity":null,"idTags":[],"datePluginDisable":null,"creationMethod":null,"ixUpdate":null,"id":"5d68b34a4026c5227690b656","starred":false,"url":"https://trello.com/b/Gva6ny0W/secret","prefs":{"permissionLevel":"private","hideVotes":false,"voting":"disabled","comments":"members","invitations":"members","selfJoin":false,"cardCovers":true,"isTemplate":false,"cardAging":"regular","calendarFeedEnabled":false,"background":"purple","backgroundImage":null,"backgroundImageScaled":null,"backgroundTile":false,"backgroundBrightness":"dark","backgroundColor":"#89609E","backgroundBottomColor":"#89609E","backgroundTopColor":"#89609E","canBePublic":true,"canBeEnterprise":true,"canBeOrg":true,"canBePrivate":true,"canInvite":true},"subscribed":false,"labelNames":{"green":"","yellow":"","orange":"","red":"","purple":"","blue":"","sky":"","lime":"","pink":"","black":""},"dateLastView":"2019-08-30T05:25:50.905Z","shortUrl":"https://trello.com/b/Gva6ny0W","memberships":[{"id":"5d68b34a4026c5227690b657","idMember":"5d68aa1338b6f82d9ee149e0","memberType":"admin","unconfirmed":false,"deactivated":false}]},{"name":"Work","desc":"","descData":null,"closed":false,"idOrganization":null,"limits":null,"pinned":null,"shortLink":"sW0KktMF","powerUps":[],"dateLastActivity":"2019-08-30T06:02:17.796Z","idTags":[],"datePluginDisable":null,"creationMethod":"automatic","ixUpdate":null,"id":"5d68aacc0b11040e22b842df","starred":false,"url":"https://trello.com/b/sW0KktMF/work","prefs":{"permissionLevel":"private","hideVotes":false,"voting":"disabled","comments":"members","invitations":"members","selfJoin":false,"cardCovers":true,"isTemplate":false,"cardAging":"regular","calendarFeedEnabled":false,"background":"blue","backgroundImage":null,"backgroundImageScaled":null,"backgroundTile":false,"backgroundBrightness":"dark","backgroundColor":"#0079BF","backgroundBottomColor":"#0079BF","backgroundTopColor":"#0079BF","canBePublic":true,"canBeEnterprise":true,"canBeOrg":true,"canBePrivate":true,"canInvite":true},"subscribed":false,"labelNames":{"green":"Easy","yellow":"Challenging","orange":"","red":"Hard","purple":"","blue":"","sky":"","lime":"","pink":"","black":""},"dateLastView":"2019-08-30T06:13:53.418Z","shortUrl":"https://trello.com/b/sW0KktMF","memberships":[{"id":"5d68aacc0b11040e22b842e3","idMember":"5d68aa1338b6f82d9ee149e0","memberType":"admin","unconfirmed":false,"deactivated":false}]}]'
     http_version: 
-  recorded_at: Fri, 30 Aug 2019 22:09:46 GMT
+  recorded_at: Fri, 30 Aug 2019 22:09:49 GMT
+- request:
+    method: get
+    uri: https://api.trello.com/1/boards/5d68aacc0b11040e22b842df/lists?filter=open&key=b7e8f311390f35db3837001520104e45&token=86249946b2ac0c5477873274dcaec19155a5db5faa5bb559c1451b7b307e51fd
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (darwin18.2.0 x86_64) ruby/2.5.3p105
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.trello.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Frame-Options:
+      - DENY
+      Strict-Transport-Security:
+      - max-age=15552000
+      X-Download-Options:
+      - noopen
+      Surrogate-Control:
+      - no-store
+      Cache-Control:
+      - max-age=0, must-revalidate, no-cache, no-store
+      Pragma:
+      - no-cache
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00
+      X-Content-Type-Options:
+      - nosniff
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Trello-Version:
+      - 1.1775.0
+      X-Trello-Environment:
+      - Production
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Allow-Headers:
+      - Authorization, Accept, Content-Type
+      Access-Control-Expose-Headers:
+      - x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining,
+        x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining
+      X-Rate-Limit-Api-Key-Interval-Ms:
+      - '10000'
+      X-Rate-Limit-Api-Key-Max:
+      - '300'
+      X-Rate-Limit-Api-Key-Remaining:
+      - '295'
+      X-Rate-Limit-Api-Token-Interval-Ms:
+      - '10000'
+      X-Rate-Limit-Api-Token-Max:
+      - '100'
+      X-Rate-Limit-Api-Token-Remaining:
+      - '95'
+      X-Rate-Limit-Member-Interval-Ms:
+      - '10000'
+      X-Rate-Limit-Member-Max:
+      - '200'
+      X-Rate-Limit-Member-Remaining:
+      - '195'
+      X-Server-Time:
+      - '1567202989317'
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"1bd-Pj43ALRoLI3ncDF8KUcPkrr4Hr8"
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Fri, 30 Aug 2019 22:09:49 GMT
+      Content-Length:
+      - '445'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - dsc=4d6102f87fc9dc4d549943e5272c058a0157e16bca76bc4fb77685efa3e01b28; Path=/;
+        Expires=Mon, 02 Sep 2019 22:09:49 GMT; Secure
+    body:
+      encoding: UTF-8
+      string: '[{"id":"5d68aacc0b11040e22b842e0","name":"New","closed":false,"idBoard":"5d68aacc0b11040e22b842df","pos":16384,"subscribed":false,"softLimit":null},{"id":"5d68aacc0b11040e22b842e1","name":"Doing","closed":false,"idBoard":"5d68aacc0b11040e22b842df","pos":32768,"subscribed":false,"softLimit":null},{"id":"5d68aacc0b11040e22b842e2","name":"Done","closed":false,"idBoard":"5d68aacc0b11040e22b842df","pos":49152,"subscribed":false,"softLimit":null}]'
+    http_version: 
+  recorded_at: Fri, 30 Aug 2019 22:09:49 GMT
 recorded_with: VCR 5.0.0

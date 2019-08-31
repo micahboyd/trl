@@ -3,16 +3,16 @@ require_relative '../trello_api'
 module TRL; module Command
   class List
     def initialize(args)
-      @board_name, @list_name, @card_name = args&.split('/')
+      @board, @list, @card = args&.split('/')
       @trello_boards = Trello::Board.all
     end
 
     def execute
-      if card_name
+      if card
         trello_card.attributes[:desc]
-      elsif list_name
+      elsif list
         trello_list.cards.map(&name)
-      elsif board_name
+      elsif board
         trello_board.lists.map(&name)
       else
         trello_boards.map(&name)
@@ -21,18 +21,26 @@ module TRL; module Command
 
     private
 
-    attr_reader :board_name, :list_name, :card_name, :trello_boards
+    attr_reader :board, :list, :card, :trello_boards
 
     def trello_board
-      trello_boards.detect(&attribute(board_name))
+      get_trello(board, from: trello_boards)
     end
 
     def trello_list
-      trello_board.lists.detect(&attribute(list_name))
+      get_trello(list, from: trello_board.lists)
     end
 
     def trello_card
-      trello_list.cards.detect(&attribute(card_name))
+      get_trello(card, from: trello_list.cards)
+    end
+
+    def get_trello(item, from:)
+      index?(item) ? from[item.to_i] : from.detect(&attribute(item))
+    end
+
+    def index?(string)
+      string.to_i.to_s == string
     end
 
     def name
