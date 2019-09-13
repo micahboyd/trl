@@ -6,6 +6,7 @@ module TRL
 
     desc 'list', 'lists boards'
     method_option :name, aliases: '-n'
+    method_option :labels, aliases: '-l'
     method_option :description, aliases: '-d'
 
     def list(args = nil)
