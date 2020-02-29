@@ -43,7 +43,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'dotenv', '~> 2.5'
   spec.add_development_dependency 'pry', '~> 0.12'
   spec.add_development_dependency 'pry-doc', '1.0'
-  spec.add_development_dependency 'rake', '~> 10.0'
+  spec.add_development_dependency 'rake', '~> 13.0'
   spec.add_development_dependency 'rspec', '~> 3.0'
   spec.add_development_dependency 'ruby-trello', '~> 2.1'
   spec.add_development_dependency 'thor'
